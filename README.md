@@ -6,7 +6,7 @@
 [![npm-download](https://img.shields.io/npm/dw/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
 [![npm](https://img.shields.io/npm/dm/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
 
-📢 Latest Updates
+## 📢 Latest Updates
 
 ✅ Built for Chrome Extensions using Manifest V3
 
@@ -14,7 +14,7 @@
 
 ✅ Ready-to-use with TypeScript, React 18, and MUI
 
-🎯 Features
+## 🎯 Features
 
 🚀 React 18 powered UI components.
 
