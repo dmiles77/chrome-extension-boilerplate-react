@@ -184,7 +184,7 @@ const Menu = () => {
               Chrome Extension boilerplate built with Manifest V3, React 18 + MUI, Webpack 5, and Webpack Dev Server 4.
             </Typography>
             <Typography pt={2} variant="subtitle2" color="text.secondary">
-              <Link href="https://example.com" onClick={() => chrome.tabs.create({ url: "https://example.com" })}>Read more</Link>
+              <Link sx={{ cursor: 'pointer' }} onClick={() => chrome.tabs.create({ url: "https://github.com/dmiles77/chrome-extension-boilerplate-react" })}>Read more</Link>
             </Typography>
           </Box>
         );
