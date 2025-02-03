@@ -162,7 +162,7 @@ ApiCall({ key: secrets.key });
 - [MUI Components](https://mui.com/material-ui/react-components/)
 
 
-🎉 Contributing
+## 🎉 Contributing
 
 Want to improve this boilerplate? Feel free to fork, modify, and submit a pull request!
 

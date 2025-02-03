@@ -16,7 +16,7 @@ const Footer = ({ isPaused, togglePause }) => {
 
   return (
     <Grid2 container>
-      <Grid2 item width='100%'>
+      <Grid2 width='100%'>
         <FooterStyled>
           <Button
             fullWidth

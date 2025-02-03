@@ -24,7 +24,7 @@ const StyledBox = styled(Box)({
 const Header = ({ setActiveSection, activeSection }) => {
   return (
     <Grid2 height={75} container justifyContent='space-between'>
-      <Grid2 item>
+      <Grid2>
         <StyledBox
           component="img"
           onClick={() => {
@@ -39,7 +39,7 @@ const Header = ({ setActiveSection, activeSection }) => {
           src={ExtensionIcon}
         />
       </Grid2>
-      <Grid2 item>
+      <Grid2>
         <IconButton onClick={() => chrome.runtime.openOptionsPage()}>
           <SettingsIcon />
         </IconButton>

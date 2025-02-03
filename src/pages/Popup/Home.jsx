@@ -5,7 +5,7 @@ const Home = ({ domain }) => {
   return (
     <Box height={100} sx={{ backgroundColor: 'whitesmoke' }}>
       <Grid2 justifyContent='center' container alignItems="center" spacing={1}>
-        <Grid2 item>
+        <Grid2>
           <Typography
             variant="subtitle1"
             fontWeight="bold"

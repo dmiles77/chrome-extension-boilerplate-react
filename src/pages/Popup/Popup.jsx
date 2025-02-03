@@ -42,17 +42,16 @@ const Popup = () => {
 
   return (
     <Grid2 height='100%' container p={2} justifyContent='space-between'>
-      <Grid2 item width='100%'>
+      <Grid2 width='100%'>
         <Header activeSection={activeSection} setActiveSection={setActiveSection} />
       </Grid2>
-      <Grid2 item width='100%'>
+      <Grid2 width='100%'>
         <Body domain={domain} activeSection={activeSection} />
       </Grid2>
-      {activeSection === 'home' && <Grid2 alignSelf='flex-end' item width='100%'>
+      {activeSection === 'home' && <Grid2 alignSelf='flex-end' width='100%'>
         <Footer isPaused={isPaused} togglePause={togglePause} />
       </Grid2>}
     </Grid2>
-
   );
 };
 
