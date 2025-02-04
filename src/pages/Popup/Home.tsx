@@ -1,7 +1,11 @@
 import React from "react";
 import { Typography, Grid2, Box } from "@mui/material";
 
-const Home = ({ domain }) => {
+interface HomeProps {
+  domain: string;
+}
+
+const Home = ({ domain }: HomeProps) => {
   return (
     <Box height={100} sx={{ backgroundColor: 'whitesmoke' }}>
       <Grid2 justifyContent='center' container alignItems="center" spacing={1}>

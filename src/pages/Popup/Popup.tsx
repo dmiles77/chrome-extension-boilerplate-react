@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid2 } from "@mui/material";
-import Header from "./Header";
-import Footer from "./Footer";
-import Body from "./Body";
+import Header from './Header';
+import Footer from './Footer';
+import Body from './Body';
 import { chromeStorage } from "../../../utils/storage";
 
 const Popup = () => {
@@ -14,7 +14,7 @@ const Popup = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       if (tabs.length > 0) {
         try {
-          const url = new URL(tabs[0].url);
+          const url = new URL(tabs[0].url || '');
 
           setDomain(url.hostname);
           chromeStorage.get("pausedSites", (result) => {
@@ -31,7 +31,7 @@ const Popup = () => {
     chromeStorage.get("pausedSites", (result) => {
       let pausedSites = result.pausedSites || [];
       if (isPaused) {
-        pausedSites = pausedSites.filter((site) => site !== domain);
+        pausedSites = pausedSites.filter((site: string) => site !== domain);
       } else {
         pausedSites.push(domain);
       }

@@ -76,7 +76,7 @@ const Menu = () => {
     { label: "Premium", icon: <Star />, color: "#FFD700" }, // Gold color
   ];
 
-  const handleCheckboxChange = (setting, value) => {
+  const handleCheckboxChange = (setting: string, value: boolean) => {
     chrome.storage.local.set({ [setting]: value }, () => {
       switch (setting) {
         case 'darkMode':

@@ -11,8 +11,12 @@ const FooterStyled = styled("div")({
   justifyContent: "center",
 });
 
+interface FooterProps {
+  isPaused: boolean;
+  togglePause: () => void;
+}
 
-const Footer = ({ isPaused, togglePause }) => {
+const Footer = ({ isPaused, togglePause }: FooterProps) => {
 
   return (
     <Grid2 container>

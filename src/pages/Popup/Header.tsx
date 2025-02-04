@@ -3,11 +3,10 @@ import { styled } from "@mui/material/styles";
 import { Grid2, IconButton, Box } from "@mui/material";
 import SettingsIcon from "@mui/icons-material/Settings";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import ExtensionIcon from "../../assets/img/icon-128.png";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 
 
-const StyledBox = styled(Box)({
+const StyledBox = styled(Box)<{ component?: React.ElementType } & React.ImgHTMLAttributes<HTMLImageElement>>({
   height: 48,
   width: 48,
   cursor: 'pointer',
@@ -21,22 +20,30 @@ const StyledBox = styled(Box)({
   }
 });
 
-const Header = ({ setActiveSection, activeSection }) => {
+interface HeaderProps {
+  setActiveSection: (section: string) => void;
+  activeSection: string;
+}
+
+const Header = ({ setActiveSection, activeSection }: HeaderProps) => {
   return (
+
     <Grid2 height={75} container justifyContent='space-between'>
       <Grid2>
         <StyledBox
           component="img"
           onClick={() => {
             setActiveSection('home');
-            const element = document.querySelector('img[alt="icon"]');
-            element.style.animation = 'swing 2s ease';
-            setTimeout(() => {
-              element.style.animation = '';
-            }, 2000);
+            const element = document.querySelector('img[alt="icon"]') as HTMLImageElement;
+            if (element) {
+              element.style.animation = 'swing 2s ease';
+              setTimeout(() => {
+                element.style.animation = '';
+              }, 2000);
+            }
           }}
-          alt="icon"
-          src={ExtensionIcon}
+          alt='icon'
+          src='icon-128.png'
         />
       </Grid2>
       <Grid2>

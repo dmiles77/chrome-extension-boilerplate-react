@@ -1,10 +1,16 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import Menu from "./Menu";
-import Home from "./Home";
+import Menu from './Menu';
+import Home from './Home';
 
-const Body = ({ domain, activeSection }) => {
+interface BodyProps {
+  domain: string;
+  activeSection: string;
+}
+
+const Body = ({ domain, activeSection }: BodyProps) => {
   const renderSection = () => {
+
     switch (activeSection) {
       case 'home':
         return (
