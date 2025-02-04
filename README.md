@@ -44,17 +44,20 @@ This boilerplate is heavily inspired by and adapted from [https://github.com/sam
 
 ### Procedures:
 
-1. Check if your [Node.js](https://nodejs.org/) version is >= **18**.
+1. Check if your [Node.js](https://nodejs.org/) version is >= **18** using `node -v` command.
 2. Clone this repository.
-3. Change the package's `name`, `description`, and `repository` fields in `package.json`.
-4. Change the name of your extension on `src/manifest.json`.
-5. Run `npm install` to install the dependencies.
-6. Run `npm start`
-7. Load your extension on Chrome following:
+3. Run `npm install` to install the dependencies.
+4. Run `npm run build`
+5. Run `npm start`
+6. Load your extension on Chrome following:
    1. Access `chrome://extensions/`
    2. Check `Developer mode`
    3. Click on `Load unpacked extension`
    4. Select the `build` folder.
+
+do not forget to modify the following:
+  Change the package's `name`, `description`, and `repository` fields in `package.json`. (not mandatory)
+  Change the name of your extension on `src/manifest.json`. (not mandatory)
 
 ## Structure
 
@@ -64,7 +67,7 @@ The boilerplate is already prepared to have a popup, an options page, a backgrou
 
 ## TypeScript
 
-This boilerplate supports TypeScript! The `Options` Page is implemented using TypeScript. Please refer to `src/pages/Options/` for example usages.
+This boilerplate supports TypeScript - interfaces might be on a common global file in the future
 
 ## Webpack auto-reload and HRM
 
@@ -168,10 +171,10 @@ Want to improve this boilerplate? Feel free to fork, modify, and submit a pull r
 
 💡 Issues & suggestions? Open a GitHub issue!
 
-📌 License
+## 📌 License
 
 This project is licensed under the MIT License. Feel free to use and modify it.
 
-🚀 Happy coding! 🎨🛠🚀
+## 🚀 Happy coding! 🎨🛠🚀
 
 Daniel Miles | [Website](https://read.cv/dmiles)
