@@ -177,4 +177,4 @@ This project is licensed under the MIT License. Feel free to use and modify it.
 
 ## 🚀 Happy coding! 🎨🛠🚀
 
-Daniel Miles | [Website](https://read.cv/dmiles)
+Daniel Miles | [Website](https://dmiles77.github.io/)
